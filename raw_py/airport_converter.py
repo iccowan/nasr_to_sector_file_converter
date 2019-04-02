@@ -66,9 +66,9 @@ def run():
         n_coord = 'N0' + v[523:525] + '.' + v[526:528] + '.' + v[529:536]
         w_coord = 'W' + v[550:553] + '.' + v[554:556] + '.' + v[557:564]
         if len(apt_identifier) == 3:
-            apt_output.write(apt_identifier + '  ' +  n_coord + ' ' + w_coord + '\n')
+            apt_output.write(apt_identifier + '  ' + freq + '  ' +  n_coord + ' ' + w_coord + '\n')
         else:
-            apt_output.write(apt_identifier + ' ' +  n_coord + ' ' + w_coord + '\n')
+            apt_output.write(apt_identifier + '  ' + freq + '  ' +  n_coord + ' ' + w_coord + '\n')
 
     # Close the files
     navaid.close()
